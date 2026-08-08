@@ -1,0 +1,13 @@
+Experiment,Pooling,Loss,Dropout,LayerNorm,BioBias,HelixPE,Wimley,Moment,Accuracy,Sensitivity,Specificity,MCC,AUROC,F1_Score
+Exp01_Full_Model,fused,bce,0.4,True,True,True,True,True,93.40%,92.49%,94.31%,0.8687,0.9789,93.33%
+Exp02_No_Bio_Bias,fused,bce,0.4,True,False,True,True,True,93.47%,92.42%,94.52%,0.8700,0.9796,93.40%
+Exp03_No_Helix_PE,fused,bce,0.4,True,True,False,True,True,93.47%,92.49%,94.45%,0.8702,0.9808,93.40%
+Exp04_No_Wimley,fused,bce,0.4,True,True,True,False,True,93.33%,92.14%,94.52%,0.8676,0.9800,93.24%
+Exp05_No_Moment,fused,bce,0.4,True,True,True,True,False,93.01%,92.42%,93.61%,0.8610,0.9790,92.97%
+Exp06_Vanilla_Baseline,fused,bce,0.4,True,False,False,False,False,93.68%,92.56%,94.80%,0.8745,0.9813,93.61%
+Exp07_Attn_Only,attn_only,bce,0.4,True,True,True,True,True,93.08%,92.14%,94.03%,0.8624,0.9789,93.01%
+Exp08_Mean_Only,mean_only,bce,0.4,True,False,False,False,False,93.26%,90.80%,95.72%,0.8666,0.9809,93.09%
+Exp09_Focal_Loss,fused,focal,0.4,True,True,True,True,True,93.43%,92.42%,94.45%,0.8694,0.9794,93.36%
+Exp10_No_LayerNorm,fused,bce,0.4,False,True,True,True,True,93.26%,91.86%,94.66%,0.8662,0.9792,93.16%
+Exp11_Dropout_0.2,fused,bce,0.2,True,True,True,True,True,93.50%,92.91%,94.10%,0.8707,0.9802,93.46%
+Exp12_Dropout_0.5,fused,bce,0.5,True,True,True,True,True,93.12%,92.07%,94.17%,0.8632,0.9792,93.05%

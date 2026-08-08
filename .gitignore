@@ -1,0 +1,22 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyTorch & Large Model Embeddings (Ignored to avoid GitHub size limits)
+data/features/esm2_residue/
+data/features/*.npy
+data/raw/
+
+# Virtual Environments
+.venv/
+env/
+venv/
+ENV/
+prot-env/
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
